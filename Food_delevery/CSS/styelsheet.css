@@ -1,0 +1,238 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* css variables */
+:root{
+    --navbar-height:60px;
+}
+
+/* navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    height: 55px;
+    width: 100%;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+ /* navbar: logo and image */
+#logo{
+     margin: 2px 10px;
+
+}
+#logo img{
+    margin: 4px 21px;
+    height: 50px;
+}
+
+ /* navbar: list styling */
+#navbar ul{
+     display: flex;
+     list-style: none;
+ }
+#navbar ul li{
+    font-size: 1.1rem;
+}
+#navbar ul li a{
+    /* font-family: 'Baloo Bhaijaan 2', cursive; */
+    color: white;
+    text-decoration: none;
+    padding: 4px 15px;
+    margin: 0px 5px;
+}
+#navbar ul li a:hover{
+    border-radius: 25px;
+    background-color:white;
+    color: black;
+}
+
+/* home section */
+#home{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 535px;
+}
+ /* #home::before{
+     content: "";
+     position: absolute;
+     background: url("..img/bg.png") no-repeat center center/cover;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     opacity: 0.9;
+ } */
+ 
+ #home img{
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     width: 100%;
+     height: 90%;
+     z-index: -1;
+     opacity: 0.8;
+     /* background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover; */
+     background: no-repeat center center/cover;
+ }
+ #home h1{
+     color: white;
+     text-align: center;
+     /* font-family: 'Baloo Bhaijaan 2', cursive; */
+ }
+ #home p{
+     color: white;
+     text-align: center;
+     font-size: 1.1rem;
+     font-family: 'Baloo Bhaijaan 2', cursive;
+ }
+
+ /* services container */
+ #services{
+     display: flex;
+     margin: 25px;
+ }
+ #services img{
+     display: block;
+     margin: auto;
+     height: 150px;
+ }
+ #services .box{
+     width: 40%;
+     height: 400px;
+     /* border: 2px solid red; */
+     box-shadow: 0px 10px 5px 2px gray, 0px -1px 5px 2px gray;
+     justify-content: center;
+     align-items: center;
+     padding: 26px 24px;
+     margin: 0px 37px;
+     border-radius: 20px;
+     background-color: rgb(248, 241, 241);
+ }
+ #services p{
+      font-family: 'Baloo Bhaijaan 2', cursive;
+}
+ .services-container{
+     /* background-color: #d7f1f1; */
+     height: 550px;
+ }
+
+ /* client section */ 
+
+ #client-section{
+     height: 288px;
+ }
+ #client-section::before{
+     content: "";
+     position: absolute;
+     background: url("../img/bg3.jpg") no-repeat center center/cover;
+     width: 100%;
+     height: 300px;
+     z-index: -1;
+     opacity: 0.6;
+ }
+
+ #clients{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: white;
+     padding: 10px;
+ }
+ 
+ .clients-item img{
+    height: 95px;
+ }
+ .clients-item{
+    /* margin: 3px; */
+    /* padding: 5px; */
+ }
+
+/* contact section */
+ #contact{
+     position: relative;
+ }
+ #contact::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url("../img/contact-us.jpg") no-repeat center center/cover;
+    opacity: 0.2;
+ }
+ #contact-box{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-bottom: 30px;
+ }
+
+ #contact-box input, #contact-box textarea{
+     width: 100%;
+     padding: 0.5rem;
+     border-radius: 10px;
+     font-size: 0.9rem;
+ }
+ #contact-box form{
+     width: 45%;
+ }
+ #contact-box label{
+     font-size: 1.2rem;
+     font-family: 'Baloo Bhaijaan 2', cursive;
+ }
+
+ footer{
+     background: black;
+     color: white;
+     padding: 10px 25px;
+ }
+
+ 
+ /* utility classes */
+
+ .h-primary{
+     font-size: 2.5rem;
+     padding: 2px 20px;
+     margin: 12px 20px;
+    }
+ .h-secondary{
+    font-size: 2.0rem;
+    padding: 20px;
+    }
+ .btn{
+     padding: 2px 20px;
+     margin: 20px;
+     border: 2px solid white;
+     background-color: green;
+     color: white;
+     border-radius: 15px;
+     cursor: pointer;
+ }
+ .center{
+     text-align: center;
+ }
